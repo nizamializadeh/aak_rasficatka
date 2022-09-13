@@ -252,7 +252,6 @@
               <!-- form start -->
 
 
-              <form>
 
 
 
@@ -305,12 +304,18 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group ">
+                    <div class="wrappers">
                     <label for="e3">Elmi rəhbər(lər)</label>
-                    <input name="subject" type="text" class="form-control" id="e3" placeholder="Elmi rəhbərin elmi dərəcəsi, elmi adı, adı, atasının adı, soyadı +++">
-                      <div class="buttons" style="  margin-top: 10px;">
-
-                  </div>
+                    <div class="element">
+                    <input style="margin-top:1px" name="subject" type="text" class="form-control" id="e3" placeholder="Elmi rəhbərin elmi dərəcəsi, elmi adı, adı, atasının adı, soyadı +++">
+                    </div>
+                    <div class="results"> </div>
+                    <div class="buttons" style="margin: 10px;">
+                      <button class="clone btn btn-primary">Əlavə et</button>
+                      <button class="remove btn btn-danger">Sil</button>
+                    </div>
+                   </div>
                     <div class="row">
                     <div class="col-12 ">
                        <h4 >Əsas</h4>
@@ -345,9 +350,16 @@
                     <div class="col-12 ">
                        <h4 >Ali təhsili</h4>
                     </div>                  
-                  <div class="form-group col-12">
+                  <div class="form-group col-12 alitehsili">
                     <label for="e7">Ali təhsili </label>
+                    <div class="alitehsilielement">
                     <input name="subject" type="text" class="form-control" id="e7" placeholder="Daxil olduğu–bitirdiyi tarix, ali təhsil müəssisəsinin adı, ali peşə istiqamətinin adı, ixtisasın adı, ixtisas dərəcəsi(bakalavr, magistr),diplomun növü(adi,fərqlənmə)++++">
+                  </div>
+                    <div class="alitehsiliresults"> </div>
+                    <div class="buttons" style="margin: 10px;">
+                      <button class="clone btn btn-primary">Əlavə et</button>
+                      <button class="remove btn btn-danger">Sil</button>
+                    </div>
                   </div>
                   <div class="form-group col-12">
                     <label for="e8">Doktorant/dissertant</label>
@@ -358,13 +370,28 @@
                     <div class="col-12 ">
                        <h4 >Mövzunun təsdiqi</h4>
                     </div>
-                    <div class="col-12 form-group">
+                    <div class="col-12 form-group elmiqerar ">
                     <label for="e5">Elmi şuranın qərarı</label>
+                    <div class="elmiqerarelement">
                     <input name="username" type="text" class="form-control" id="e5" placeholder="Elmi şuranın keçirilmə tarixi, mövzunun təsdiqi və ya dəyişdirilməsi,Elmi rəhbərin təsdiqi və ya dəyişdirilməsi +++">
                     </div>
-                    <div class="col-12 form-group">
-                       <label for="e6">Problem şurasının qərarı</label>
+                    <div class="elmiqerarresults"> </div>
+                    <div class="buttons" style="margin: 10px;">
+                      <button class="clone btn btn-primary">Əlavə et</button>
+                      <button class="remove btn btn-danger">Sil</button>
+                    </div>
+                  </div>
+
+                   <div class="col-12 form-group problemqerar ">
+                    <label for="e6">Problem şurasının qərarı</label>
+                    <div class="problemqerarelement">
                     <input name="date"  type="text" class="form-control" id="e6" placeholder="Tarix +++">
+                    </div>
+                     <div class="problemqerarresults"> </div>
+                    <div class="buttons" style="margin: 10px;">
+                      <button class="clone btn btn-primary">Əlavə et</button>
+                      <button class="remove btn btn-danger">Sil</button>
+                    </div>
                     </div>
                   </div>
                   <div class="row">   
@@ -401,9 +428,17 @@
                     <input name="date"  type="text" class="form-control"  placeholder="İlkin müzakirənin  yeri">
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group ilkrey" >
                     <label for="e9">İlkin müzakirənin rəyçilər haqqında məlumat</label>
+                    <div class="ilkreyelement">
                     <input name="subject" type="text" class="form-control" id="e9" placeholder="Rəyçilərin elmi dərəcəsi, elmi adı, adı, atasının adı, soyadı və çalışdığı müəsisə ++++">
+                    </div>
+                    <div class="ilkreyresults"> </div>
+                     <div class="buttons" style="margin: 10px;">
+                      <button class="clone btn btn-primary">Əlavə et</button>
+                      <button class="remove btn btn-danger">Sil</button>
+                    </div>
+                  </div>
                   </div>  
                   <div class="row">
                     <div class="col-12 ">
@@ -418,18 +453,33 @@
                     <input name="date"  type="text" class="form-control"  value="müdafiəyə tövsiyə edilir və ya edilmir">
                     </div>
                   
-                  <div class="col-12 form-group">
+                  <div class="col-12 form-group elmisemnar ">
                     <label for="e9">Elmi seminarın rəyçilər haqqında məlumat</label>
+                    <div class="elmisemnarelement">
                     <input name="subject" type="text" class="form-control" id="e9" placeholder="Rəyçilərin elmi dərəcəsi, elmi adı, adı, atasının adı, soyadı və çalışdığı müəsisə ++++">
-                  </div>                 
+                    </div>
+                    <div class="elmisemnarresults"> </div>
+                    <div class="buttons" style="margin: 10px;">
+                      <button class="clone btn btn-primary">Əlavə et</button>
+                      <button class="remove btn btn-danger">Sil</button>
+                    </div>
+                  </div> 
+
                 </div>
                   <div class="row">
                     <div class="col-12 ">
                        <h4 >Müdafiənin tarixi və opponentləri</h4>
                     </div>
-                  <div class=" col-12 form-group">
+                  <div class=" col-12 form-group opponent">
                     <label for="a2">Müdafiənin opponentləri haqqında məlumat </label>
-                    <input name="subject" type="text" class="form-control" id="a2" placeholder="Opponentin  elmi dərəcəsi, elmi adı, adı, atasının adı, soyadı və təşkilat ++++">
+                    <div class="opponentelement">
+                   <input name="subject" type="text" class="form-control" id="a2" placeholder="Opponentin  elmi dərəcəsi, elmi adı, adı, atasının adı, soyadı və təşkilat ++++">
+                    </div>
+                    <div class="opponentresults"> </div>
+                    <div class="buttons" style="margin: 10px;">
+                      <button class="clone btn btn-primary">Əlavə et</button>
+                      <button class="remove btn btn-danger">Sil</button>
+                    </div>
                   </div>  
                   <div class="col-12 form-group">
                     <label for="a2">Müdafiənin tarixi</label>
@@ -594,18 +644,16 @@
                   <div class="row">
                   <div class="col-12 ">
                        <h4 >Kollegiyanın tarixi və qərarı ++</h4>
-                    </div>
+                  </div>
                     <div class="col-6 form-group">
                        <label >Kollegiyanın tarixi  </label>
                     <input name="text"  type="text" class="form-control"  placeholder="  " >
                     </div>
+
                     <div class="col-6 form-group">
                        <label >Kollegiyanın qərarı  </label>
                     <input name="text"  type="text" class="form-control"  placeholder="" >
                     </div>
-
-   
-                
                     <div class="col-sm-12">
                       <div class="form-group">
                         <label>Şöbənin təklifi</label>
@@ -659,14 +707,12 @@
                        <label >İddiaçının ekspert şurasının iclasında iştirakı haqqında  </label>
                     <input name="text"  type="text" class="form-control"  placeholder="" >
                     </div>
-                   <button type="button" class="btn btn-outline-primary btn-fw diladd">   elave et</button>
                    </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-              </form>
             </div>
           </div>
         </div>
@@ -852,14 +898,64 @@
   // DropzoneJS Demo Code End
 
 
-  //jquery
-$('.wrapper').on('click', '.remove', function() {
-  $('.remove').closest('.wrapper').find('.element').not(':first').last().remove();
-});
-$('.wrapper').on('click', '.clone', function() {
-  $('.clone').closest('.wrapper').find('.element').first().clone().appendTo('.results');
-});
 
 </script>
+<script type="text/javascript">
+  //jquery
+$('.wrappers').on('click', '.remove', function() {
+  $('.remove').closest('.wrappers').find('.element').not(':first').last().remove();
+});
+$('.wrappers').on('click', '.clone', function() {
+  $('.clone').closest('.wrappers').find('.element').first().clone().appendTo('.results');
+});
+
+  //jquery
+$('.alitehsili').on('click', '.remove', function() {
+  $('.remove').closest('.alitehsili').find('.alitehsilielement').not(':first').last().remove();
+});
+$('.alitehsili').on('click', '.clone', function() {
+  $('.clone').closest('.alitehsili').find('.alitehsilielement').first().clone().appendTo('.alitehsiliresults');
+});
+
+  //jquery
+$('.elmiqerar').on('click', '.remove', function() {
+  $('.remove').closest('.elmiqerar').find('.elmiqerarelement').not(':first').last().remove();
+});
+$('.elmiqerar').on('click', '.clone', function() {
+  $('.clone').closest('.elmiqerar').find('.elmiqerarelement').first().clone().appendTo('.elmiqerarresults');
+});
+
+  //jquery
+$('.problemqerar').on('click', '.remove', function() {
+  $('.remove').closest('.problemqerar').find('.problemqerarelement').not(':first').last().remove();
+});
+$('.problemqerar').on('click', '.clone', function() {
+  $('.clone').closest('.problemqerar').find('.problemqerarelement').first().clone().appendTo('.problemqerarresults');
+});
+
+  //jquery
+$('.ilkrey').on('click', '.remove', function() {
+  $('.remove').closest('.ilkrey').find('.ilkreyelement').not(':first').last().remove();
+});
+$('.ilkrey').on('click', '.clone', function() {
+  $('.clone').closest('.ilkrey').find('.ilkreyelement').first().clone().appendTo('.ilkreyresults');
+});
+
+  //jquery
+$('.elmisemnar').on('click', '.remove', function() {
+  $('.remove').closest('.elmisemnar').find('.elmisemnarelement').not(':first').last().remove();
+});
+$('.elmisemnar').on('click', '.clone', function() {
+  $('.clone').closest('.elmisemnar').find('.elmisemnarelement').first().clone().appendTo('.elmisemnarresults');
+});
+
+  //jquery
+$('.opponent').on('click', '.remove', function() {
+  $('.remove').closest('.opponent').find('.opponentelement').not(':first').last().remove();
+});
+$('.opponent').on('click', '.clone', function() {
+  $('.clone').closest('.opponent').find('.opponentelement').first().clone().appendTo('.opponentresults');
+});
+</script> elmisemnar opponent
 </body>
 </html>
