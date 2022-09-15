@@ -641,11 +641,13 @@
    
                   </div>
 
-                  <div class="row">
+                  <div class="row kollegiya" >
                   <div class="col-12 ">
                        <h4 >Kollegiyanın tarixi və qərarı ++</h4>
                   </div>
-                    <div class="col-6 form-group">
+
+                      <div class="row container-fluid kollegiyaelement">  
+                    <div class="col-6 form-group ">
                        <label >Kollegiyanın tarixi  </label>
                     <input name="text"  type="text" class="form-control"  placeholder="  " >
                     </div>
@@ -654,17 +656,24 @@
                        <label >Kollegiyanın qərarı  </label>
                     <input name="text"  type="text" class="form-control"  placeholder="" >
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-12">
                       <div class="form-group">
                         <label>Şöbənin təklifi</label>
                     <input name="text"  type="text" class="form-control"  placeholder="" >
                       </div>
                     </div>
+                    </div>
+
+                     <div class="kollegiyaresults row container-fluid" > </div>
+                      <div class="buttons" style="margin: 10px;">
+                      <button class="clone btn btn-primary">Əlavə et</button>
+                      <button class="remove btn btn-danger">Sil</button>
+                    </div>
                   </div>
 
 
 
-                  <div class="row">
+                  <div class="row exreyci">
                   <div class="col-12 ">
                        <h4 >Ekspert şurasının tarixi, qərarı, səsvermənin nəticələri, rəyçilər</h4>
                    </div>
@@ -673,20 +682,29 @@
                        <label >Ekspert şurasının adı  </label>
                     <input name="text"  type="text" class="form-control"  placeholder="  " >
                     </div>
-                    <div class="reci col-12 form-group" style="border: 1px solid black;">
-                    <div class="col-6 form-group">
+
+                    <div class="exreycielement row container-fluid" >
+                    <div class="col-12 form-group">
                        <label >Ekspert şurasının rəyçiləri haqqında məlumat  </label>
                     <input name="text"  type="text" class="form-control"  
                     placeholder="Rəyçinin elmi dərəcəsi, elmi adı, adı, atasının adı, soyadı, rəyin göndərilmə və daxil olma tarixi" >
                     </div>
-                    <div class="col-6 form-group">
+                    <div class="col-12 form-group">
                        <label >Dissertasiya işinin tələblərə cavabvermə dərəcəsi  </label>
                     <input name="text"  type="text" class="form-control"  placeholder="" >
                     </div>
                     </div>
+                     <div class="exreyciresults row container-fluid"> </div>
+                    <div class="buttons" style="margin: 10px;">
+                      <button class="clone btn btn-primary">Əlavə et</button>
+                      <button class="remove btn btn-danger">Sil</button>
                     </div>
 
-                    <div class="row">
+
+                    </div>
+
+                    <div class="row ekspert ">
+                  <div class="row container-fluid ekspertelement">
                     <div class="col-6 form-group">
                        <label >Ekspert şurasının tarixi  </label>
                     <input name="text"  type="text" class="form-control"  placeholder="  " >
@@ -707,7 +725,14 @@
                        <label >İddiaçının ekspert şurasının iclasında iştirakı haqqında  </label>
                     <input name="text"  type="text" class="form-control"  placeholder="" >
                     </div>
+                    </div>
+                    <div class="ekspertresults row container-fluid"> </div>
+                     <div class="buttons" style="margin: 10px;">
+                      <button class="clone btn btn-primary">Əlavə et</button>
+                      <button class="remove btn btn-danger">Sil</button>
+                    </div>
                    </div>
+
                 <!-- /.card-body -->
 
                 <div class="card-footer">
@@ -956,6 +981,27 @@ $('.opponent').on('click', '.remove', function() {
 $('.opponent').on('click', '.clone', function() {
   $('.clone').closest('.opponent').find('.opponentelement').first().clone().appendTo('.opponentresults');
 });
-</script> elmisemnar opponent
+  //jquery
+$('.kollegiya').on('click', '.remove', function() {
+  $('.remove').closest('.kollegiya').find('.kollegiyaelement').not(':first').last().remove();
+});
+$('.kollegiya').on('click', '.clone', function() {
+  $('.clone').closest('.kollegiya').find('.kollegiyaelement').first().clone().appendTo('.kollegiyaresults');
+});
+  //jquery
+$('.exreyci').on('click', '.remove', function() {
+  $('.remove').closest('.exreyci').find('.exreycielement').not(':first').last().remove();
+});
+$('.exreyci').on('click', '.clone', function() {
+  $('.clone').closest('.exreyci').find('.exreycielement').first().clone().appendTo('.exreyciresults');
+});
+  //jquery
+$('.ekspert').on('click', '.remove', function() {
+  $('.remove').closest('.ekspert').find('.ekspertelement').not(':first').last().remove();
+});
+$('.ekspert').on('click', '.clone', function() {
+  $('.clone').closest('.ekspert').find('.ekspertelement').first().clone().appendTo('.ekspertresults');
+});
+</script> elmisemnar opponent kollegiya exreyci
 </body>
 </html>
